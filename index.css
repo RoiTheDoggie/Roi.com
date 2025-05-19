@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-image: url(giphy-2497039577.gif);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position-x: center;
+    background-position-y: 300px;
+    background-color: rgb(0, 0, 0);
+
+}
+.about{
+    color: aliceblue;
+    text-align: center;
+    margin-top: auto;
+    font-size: 18px;
+    animation: movementFadein 2s ease-in;
+}
+
+
+.logo-text{
+    display: flex;
+    padding-left: 10px;
+    font-size: 25px;
+    top: 0;
+    bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier', monospace;
+
+}
+
+.logo-img {
+    border-radius: 50%;
+
+}
+
+.home-text{
+    display: flex;
+    color: rgb(131, 255, 106);
+    padding-top: 350px;
+    padding-left: 640px;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+.home-text h1 {
+    margin-top: auto;
+    margin-bottom: 5px;
+}
+
+.nav {
+    animation: fadeIn 2s ease-in-out;
+}
+.navigation{
+    background-color: rgb(5, 110, 158);
+    width: 100%;
+    position: fixed;
+    display: flex;
+    padding: 15px 15px;
+    opacity: 90%;
+    
+}
+.controls {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: auto;
+    padding-left: 1000px;
+    display: flex;
+    
+    
+}
+
+.controls li {
+    list-style: none;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.controls a {
+    text-decoration: none;
+    font-family: Helvetica;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier', monospace;
+}
+
+
+.button {
+margin-left: 46%;
+    padding: 15px 25px;
+    font-size: 15px;
+    outline: none;
+    color: #fff;
+    background-color: #0407aa;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    animation: movementFadein 2.5s ease-out;
+  }
+  
+  .button:active {
+    background-color: #002df5;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+
+/* Hover */
+
+.nav :hover{
+    background-color: black;
+    transition-duration: 1s;
+    
+}
+
+.controls a:hover{
+    color: #22ff35;
+}
+
+.button:hover {background-color: #170469}
+
+/* Animation */
+
+@keyframes fadeIn{
+
+    from{ opacity: 0;}
+    to{ opacity: 1;}
+
+}
+
+@keyframes movementFadein{
+
+    from{ 
+        opacity: 0;
+        transform: translateY(15px);}
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);}
+
+}
